@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "react",
+
+    // Uses Preact's "h" rather than "React.createElement" for JSX transpilation
+    "jsxFactory": "h",
+    // Uses Preact's "Fragment" rather than "React.Fragment" for JSX transpilation
+    "jsxFragmentFactory": "Fragment",
+
+    "strict": true
+  },
+  "includes": ["src"]
+}
