@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A webpage to display data that the visitor makes publically available.",
   "scripts": {
+    "lint": "eslint src/**",
     "prebuild": "rm -rf dist",
     "build:js": "esbuild src/index.tsx --bundle --minify --outfile=dist/index.js",
     "build:static": "cp -R static ./dist",
@@ -21,8 +22,11 @@
   "homepage": "https://github.com/fildon/user-scan#readme",
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
     "babel": "^6.23.0",
     "esbuild": "^0.13.2",
+    "eslint": "^7.32.0",
     "preact": "^10.5.14",
     "typescript": "^4.4.3"
   }
